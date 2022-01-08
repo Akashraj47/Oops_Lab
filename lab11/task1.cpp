@@ -1,21 +1,30 @@
 #include <iostream>
-using namespace std;
-class a{
-	public :
-	int x,y;
-};
-class b: public a{
-public :
-	void display()
-	{
-		x = 10;
-		y = 20;
-		cout << x <<" "<< y << endl;
+using namespace std; 
+
+class A {
+	
+	public: 
+	void display1 () {
+	
+	cout << "This is a method of class A" << endl;
+	
 	}
-};
-int main()
-{
-	b obj;
-	obj.display();
+}; 
+class B: public A {
+
+	public: 
+	
+	void display2 () {
+	cout << "This is a method of class B" << endl; 
+	
+	}	
+}; 
+
+int main () {
+	
+	B obj; 
+	obj.display1(); 
+	
 	return 0;
+	
 }
